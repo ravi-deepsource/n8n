@@ -1,0 +1,15 @@
+version = 1
+
+test_patterns = ["packages/*/test/**"]
+
+exclude_patterns = ["docker/**"]
+
+[[analyzers]]
+name = "javascript"
+enabled = true
+
+  [analyzers.meta]
+  environment = ["nodejs"]
+  plugins = ["vue"]
+  style_guide = "standard"
+  dialect = "typescript"
