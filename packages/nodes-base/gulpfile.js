@@ -1,8 +1,8 @@
-const { src, dest } = require('gulp');
+const { src, dest } = require('gulp')
 
-function copyIcons() {
-	return src('nodes/**/*.{png,svg}')
-		.pipe(dest('dist/nodes'));
+function copyIcons () {
+  return src('nodes/**/*.{png,svg}')
+    .pipe(dest('dist/nodes'))
 }
 
-exports.default = copyIcons;
+exports.default = copyIcons
